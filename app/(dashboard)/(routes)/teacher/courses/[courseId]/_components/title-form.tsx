@@ -18,7 +18,7 @@ import { Pencil } from "lucide-react";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import { Textarea } from "@/components/ui/textarea";
+// import { Textarea } from "@/components/ui/textarea";
 
 interface TitleFormProps {
   initialData: {
@@ -87,11 +87,11 @@ export const TitleForm = ({ initialData, courseId }: TitleFormProps) => {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Textarea
+                    {/* <Textarea
                       disabled={isSubmitting}
                       placeholder="e.g.'Advanced web development'"
                       {...field}
-                    />
+                    /> */}
                   </FormControl>
                   <FormMessage />
                 </FormItem>
